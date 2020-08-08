@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+class cuboid()
+{
+    private:
+        int l,b,h;
+    public:
+        cuboid(){
+        cout<<"\n Enter length,breadth and height: ";
+        cin>>l>>b>>h;
+        }
+        cuboid(int L, int B, int H){
+        l=L;
+        b=B;
+        h=H;
+        }
+        void calc(){
+        cout<<"\n volume is:"<<l*b*h;
+        }
+};
+int main() 
+{
+    int l,b,h;
+    cuboid c1;
+    c1.calc();
+    cout<<"\n enter length,breadth,height :" ;
+    cin>>l>>b>>h;
+    volume v2(l,b,h);
+    c2.calc();
+    return 0;
+}
