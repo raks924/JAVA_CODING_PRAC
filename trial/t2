@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+class love
+{
+        int stu,r;
+        public:
+            void getdata(int stu,int r);
+        
+            void display(void)
+                {
+                    cout<<"the name is: \n"<<stu;
+                    cout<<"the age is: \n"<<r;  
+                }
+};
+
+void love :: getdata(int stu,int r)
+{
+    cout<<"enter the name of student \n";
+    cin>>stu;
+    cout<<"enter her age \n";
+    cin>>r;
+}
+
+main()
+{
+    int stu,r;
+    love l;
+    l.getdata(stu,r);
+    l.display();
+    
+    return 0;
+}
