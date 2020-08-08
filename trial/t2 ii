@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{   
+    int a,b,fre;
+    
+    printf(" enter the two nos.");
+    scanf("%d%d",&a,&b);
+    
+    fre=sum(a,b); 
+    printf("the result is %d",fre);
+    
+    return 0;
+}
+
+int sum(int a,int b) {
+    int num3;
+    
+    num3=a+b;;
+    printf("your sum is %d",num3);
+    
+    return num3;
+}
