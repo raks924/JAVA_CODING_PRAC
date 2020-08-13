@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+void swap(int *p,int *r)
+{
+    int q;
+    q=*p;
+    *p=*r;
+    *r=q;
+}
+
+int main()
+{
+    int a,b;
+    
+    printf("enter the value");
+    scanf("%d \n",&a);
+    
+    printf("enter the value");
+    scanf("%d \n",&b);
+    
+    printf("before swapping the integers are %d and %d",a,b);
+    swap(&a,&b);   
+    printf("after swapping the integers are %d and %d",a,b);
+
+    return 0;
+}
