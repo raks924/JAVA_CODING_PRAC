@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include<string.h>
+
+# define max 15
+
+int top=-1,i;
+char stack[15];
+char b;
+
+void push(char b)
+{
+    if (top==15)
+        printf("stack overflow");
+    else{
+    top++;
+    stack[top]=b;
+    }
+}
+
+void pop()
+{
+    if (top==-1)
+    printf("stack is empty");
+    else
+    {
+        printf("%c",stack[top]);
+        top--;
+    }
+}
+
+int main()
+{
+    char str[12];
+    printf("enter the string: \n");
+    scanf("%s",str);
+    
+    for(i=0;i<strlen(str);i++)
+    {
+        push(str[i]);
+    }
+    
+    for(i=0;i<strlen(str);i++)
+    {
+        pop();
+    }
+    
+return 0;
+}
+
