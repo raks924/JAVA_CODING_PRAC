@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+struct node{
+    int data;
+    struct node *next;
+};
+
+int main(){
+    struct node *head,*one,*two,*three;
+    
+    head = one;
+    
+    one=(struct node *)malloc(sizeof(struct node));
+    two=(struct node *)malloc(sizeof(struct node));
+    three=(struct node *)malloc(sizeof(struct node));
+    
+    one->data=4;
+    two->data=5;
+    three->data=6;
+    
+    one->next=two;
+    two->next=three;
+    three->next=NULL;
+    
+    printf("%d \n",one->data);
+    printf("%d \n",two->data);
+    printf("%d \n",three->data);
+    printf("%d \n",head);
+    
+    return 0;
+}
