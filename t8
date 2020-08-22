@@ -1,0 +1,98 @@
+#include <stdio.h>
+
+struct node{
+    int data;
+    struct node *next;
+}*head=NULL;
+
+void create(){
+    struct node *nn;
+    int choice;
+
+    do{
+    printf("enter the value of node :");
+    scanf("%d",&nn->data);
+    nn->next=NULL;
+    
+    if(head==NULL)
+        {
+            head=nn;
+        }
+    else
+        {
+            nn->next=head;
+            head=nn;
+        }
+    
+    printf("do you want to enter more nodes? (0=no,1=yes)");
+    scanf("%d",&choice);
+    }while(choice!=0);
+}
+
+void insert_first(){
+    struct node *nn;
+    
+    printf("enter the value of node :");
+    scanf("%d",&nn->data);
+    nn->next=NULL;
+    
+    if(head==NULL)
+        {
+            head=nn;
+        }
+    else
+        {
+            nn->next=head;
+            head=nn;
+        }
+}
+
+void insert_mid(){
+    
+}
+
+void insert_end(){
+    struct node *nn,*current;
+    
+    printf("enter the value of node :");
+    scanf("%d",&nn->data);
+    nn->next=NULL;
+    
+    if(head==NULL)
+        {
+            head=nn;
+        }
+    else
+        {
+            current=head;
+            while((current->next)!=NULL)
+                current=current->next;
+                
+            nn=current->next;
+            current=nn;
+        }
+}
+
+int main()
+{
+    int ch;
+    
+    printf("MAIN MENU");
+    printf("1)creation \n");
+    printf("2)insert at beginning \n");
+    printf("3)insert at mid \n");
+    printf("4)insert at last\n");
+    printf("enter your choice :\n");
+    scanf("%d",&ch);
+    
+    switch(ch)
+    {
+        case 1:create();
+                break;
+        case 2:insert_first();
+                break;
+        case 3:insert_mid();
+                break;
+        case 4:
+    }
+}
