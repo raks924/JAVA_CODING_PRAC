@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+struct node{
+    struct node *pre;
+    int data;
+    struct node *pos;
+}*head=NULL;
+
+void create(){
+    struct node *temp;
+    int cho;
+    
+    printf("do you want to enter more nodes?");
+    scanf("%d",&cho);
+}
+
+int main(){
+    do{
+        printf("MAIN MENU: \n");
+        printf("1)create dll \n");
+        printf("2)insert at beg \n");
+        printf("3)insert at mid \n");
+        printf("4)insert at end \n");
+        printf("5)delete from beg \n");
+        printf("6)delete from mid \n");
+        printf("7)delete from end \n");
+        printf("8)display dll \n");
+        printf("enter your choice: \n");
+        scanf("%d",&ch);
+
+    switch(ch)
+    {
+        case 1: create();
+                break;
+        case 2: insert_beg();
+                break;
+        case 3: insert_mid();
+                break;
+        case 4: insert_end();
+                break;
+        case 5: delete_beg();
+                break;
+        case 6: delete_mid();
+                break;
+        case 7: delete_end();
+                break;
+        case 8: display();
+                break;
+    }
+    
+    }while(ch!=0);
+    
+    return 0;
+}
