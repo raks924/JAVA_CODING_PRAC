@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+class circle {
+    protected:
+        float radius;
+    public:
+        circle(float r){
+            radius=r;
+        }
+    
+        virtual float area(float radius){
+            float r;
+            area=3.14*r*r;
+            return area;
+        }
+};
+
+class cylinder:public circle {
+    private:
+    float height;
+    public:
+        cylinder(float r,float h):circle(r){
+            height=h;
+        }
+    float area(){
+        float a;
+        area=2*3.14*r*h + 2*3.14*r*r;
+        return area;
+    }
+};
+
+int main()
+{
+    circle *ptr;
+    circle a1(2.4);
+    cylinder a2(2.4,3.2);
+    
+    ptr=&a1;
+    cout<<"AREA:"<<endl<<ptr->area();
+    ptr=&a2;
+    cout<<"AREA 2:"<<endl<<ptr->area();
+
+}
