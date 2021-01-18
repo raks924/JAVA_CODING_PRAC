@@ -1,0 +1,25 @@
+package com.mycompany.practice;
+
+class Raks{
+    int num1=4;
+    double num2=6.3;
+    double result;
+    
+    public Raks()
+    {
+        result = num1 * num2;
+    }    
+}
+
+
+
+
+public class CodePractice 
+{
+    public static void main(String[] args) 
+    {
+        Raks obj = new Raks();
+        
+        System.out.println(obj.result);
+    }
+}
