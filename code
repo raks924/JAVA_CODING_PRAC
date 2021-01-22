@@ -1,0 +1,28 @@
+package com.mycompany.practice;
+
+class chloe {
+    private int rollno ;
+    private String name;
+    
+    public void Setinfo(int rollno,char name){
+        rollno=r;
+        name = n;
+            
+    }
+    
+    public void getinfo(){
+        System.out.println(rolln);
+    }
+}
+
+
+public class junkkk {
+    public static void main(String[] args) {
+        int[] arr = {1,2,3,4,5} ;
+        
+        jingle2 obj = new jingle2(2,5);
+        
+        
+        
+                
+        
