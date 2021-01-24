@@ -1,0 +1,19 @@
+package com.mycompany.practice;
+
+class pen{
+    public void show(){
+        System.out.println("i am a pen");
+    }
+}
+public class junkkk {
+    public static void main(String[] args) {
+        pen p = new pen()
+                {
+                    public void show()
+                    {
+                        System.out.println("i am a pencill");
+                    }
+                };
+        p.show();
+    }
+}
