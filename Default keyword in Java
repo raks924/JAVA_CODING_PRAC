@@ -1,0 +1,19 @@
+package com.mycompany.practice;
+
+interface pen{
+    default void show(){
+        System.out.println("this is world");
+    }
+   }
+
+class write implements pen{
+
+}
+
+public class junkkk {
+    public static void main(String[] args) {
+        pen p = new write();
+        
+        p.show();
+    }
+}
