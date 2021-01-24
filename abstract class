@@ -1,0 +1,26 @@
+package com.mycompany.practice;
+
+abstract class writer {
+    public abstract void write();
+}
+
+class pen extends writer{
+    public void write(){
+        System.out.println("i am a pen");
+    }
+}
+
+class pencil extends writer {
+        public void write(){
+            System.out.println("i am a pencil");
+        }
+    }
+
+public class junkkk {
+    public static void main(String[] args) {
+        writer obj=new pen();
+        obj.write();
+        writer obj1=new pencil();
+        obj1.write();
+    }
+}
