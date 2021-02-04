@@ -1,0 +1,31 @@
+
+
+interface IntStack{
+    void push(int item);
+    int pop();
+}
+
+class FixedStack implements IntStack {
+        private final int intstck[];
+        private  int tos;
+
+       FixedStack(int size){
+           intstck=new int[size];
+           tos = -1;
+       
+
+        
+        @Override
+       public void push(int item){
+           if(tos==intstck.length-1)
+               System.out.println("no element can be added");
+           else
+               intstck[++tos]=item;
+       }
+
+
+        @Override
+       public int pop(){
+           if(tos==-1){
+               System.out.println("no item can be removed");
+               return 0;
