@@ -1,0 +1,53 @@
+package com.mycompany.practice;
+import java.util.Scanner;
+
+public class CodePractice{
+  
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        
+            
+        String test="aeio um 12 3 ert at!!?? lov";
+        count (test);
+    }
+        public static void count(String sc){
+        
+        char[] ch=sc.toCharArray();
+        int letter =0;
+        int number=0;
+        int space=0;
+        int other=0;
+        
+        for(int i=0;i<sc.length();i++){    
+            if(Character.isDigit(ch[i]))
+                number++;
+            
+            
+            else if(Character.isLetter(ch[i]))
+                letter++;
+            
+            
+            else if(Character.isSpaceChar(ch[i])){
+                space++;
+            
+            }
+            else
+                other++;
+            
+        }
+        
+            System.out.println("this is the string count");
+            System.out.println("letters" + letter);
+            System.out.println("numbers" + number);
+            System.out.println("spacess" + space);
+            System.out.println("otherss:" + other);
+            
+        }
+        
+          
+        
+        
+   
+    }
+
