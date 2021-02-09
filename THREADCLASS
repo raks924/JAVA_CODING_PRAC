@@ -1,0 +1,21 @@
+public class LabFive {
+    public static void main(String[] args) {
+        MULTI m=new MULTI();
+        m.start();
+        m.run();
+    }
+    
+}   
+
+
+class MULTI extends Thread{
+    public void run(){
+        System.out.println("MULTITHREADING!!");
+    }
+}
+
+class Thread {
+        void start(){
+            System.out.println("the thread has started");
+        }
+}
