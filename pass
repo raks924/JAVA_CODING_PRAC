@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class CodePractice{
+  
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+         p;
+        
+        System.out.println("input your password:");
+        char r=sc.
+    }
+   
+    }
