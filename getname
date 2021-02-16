@@ -1,0 +1,34 @@
+package Labs;
+import java.lang.String;
+
+public class LabSeven{
+    public String getName;
+    
+    public void setName(){
+    };
+    
+    public long getId;
+    
+    static class Method extends Thread{
+        public void run(){
+            System.out.println("the thread is running");
+        }
+    }
+    public static void main(String[] args) {
+        Method t1=new Method();
+        Method t2=new Method();
+        Method t3=new Method();
+        
+        System.out.println("the name of t1 is " + t1.getName());
+        System.out.println("the name of t2 is " + t2.getName());
+        
+        t1.start();
+        t2.start();
+        t3.start();
+        
+        t2.setName("boolean algebra");
+        
+        System.out.println("the name of t2 after setting is :" + t2.getName());
+        System.out.println("this is the id of t3:" + t3.getId());
+    }
+}
