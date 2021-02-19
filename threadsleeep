@@ -1,0 +1,31 @@
+ackage com.mycompany.practice;
+
+
+public class CodePractice{
+    
+  
+    public static void main(String[] args) {
+        
+        Disp t1=new Disp();
+        Disp t2=new Disp();
+        t1.run();
+        t2.run();
+        
+                
+       
+    }
+    
+    static class Disp extends Thread {
+        public void run(){
+            System.out.println(Thread.currentThread());
+            try{
+                Thread.sleep(400);
+                System.out.println("the thread has slept");
+            }catch(InterruptedException e){
+            System.out.println("caught!!");
+        }
+        }
+    }
+   
+    }
+
