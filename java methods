@@ -1,0 +1,13 @@
+substring()	returns the substring of the string
+replace()	replaces the specified old character with the specified new character
+charAt()	returns the character present in the specified location
+getBytes()	converts the string to an array of bytes
+indexOf()	returns the position of the specified character in the string
+compareTo()	compares two strings in the dictionary order
+trim()	removes any leading and trailing whitespaces
+format()	returns a formatted string
+split()	breaks the string into an array of strings
+toLowerCase()	converts the string to lowercase
+toUpperCase()	converts the string to uppercase
+valueOf()	returns the string representation of the specified argument
+toCharArray()	converts the string to a char array
