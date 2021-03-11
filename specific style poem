@@ -1,0 +1,11 @@
+package com.mycompany.practice;
+
+
+public class CodePractice{
+    
+  
+    public static void main(String[] args) {
+        System.out.println("twinkle twinkle \n \t little star \n \t \t \t how i wonder \n \t \t \t \t \t what you are ");
+    
+    }
+}
